@@ -1,0 +1,7 @@
+@use './global/colors';
+
+.main {
+  background-color: colors.$cinzaclaro;
+  width: 100%;
+  height: auto;
+}

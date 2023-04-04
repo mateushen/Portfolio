@@ -1,0 +1,42 @@
+@use '../../global/colors';
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.title {
+    position: fixed;
+    left: 0;
+    margin-left: 1rem;
+    margin-top: 2rem;
+    color: colors.$branco;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    background-color: colors.$preto;
+}
+
+.header {
+    width: 40%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.header-comp {
+    color: colors.$branco;
+    font-size: 1.2rem;
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header-comp:hover {
+    color: colors.$cinzaclaro;
+    cursor: pointer;
+}

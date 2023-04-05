@@ -1,0 +1,23 @@
+@use '../../global/colors';
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    height: auto;
+    margin: 5% 10%;
+    background-color: colors.$cinzaclaro;
+}
+
+.resume {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+.img {
+    width: 20rem;
+}

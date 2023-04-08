@@ -4,7 +4,7 @@ import foto from '../../global/img/eu.png'
 export default function Summary() {
     return (
         <div className="main">
-            <div className="container">
+            <div className="container-main">
                 <img className="img" src={foto} />
                 <div className="resume">
                     <span>

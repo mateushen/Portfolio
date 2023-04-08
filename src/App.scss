@@ -1,7 +1,28 @@
 @use './global/colors';
 
 .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   width: 100%;
-  height: auto;
+  height: 100rem;
   background-color: colors.$cinzaclaro;
+}
+
+.btn-step {
+  width: 5rem;
+  height: 5rem;
+  border: none;
+  background-color: none;
+}
+
+.btn-step img {
+  width: 5rem;
+  height: 5rem;
+  background-position: center;
+}
+
+.btn-step:hover {
+  cursor: pointer;
 }

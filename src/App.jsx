@@ -21,13 +21,13 @@ function App() {
   return (
     <>
       <Header />
-
+      <div className="container">
         <div className="main">
-          <button className="btn-step"><img src={previous} /></button>
+          <button className="btn-step" onClick={buttonClickPrevious}><img src={previous} /></button>
           <Summary />
-          <button className="btn-step"><img src={next} /></button>
+          <button className="btn-step" onClick={buttonClickNext}><img src={next} /></button>
         </div>
-
+      </div>
       <Footer />
     </>
 

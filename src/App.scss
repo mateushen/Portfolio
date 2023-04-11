@@ -1,5 +1,10 @@
 @use './global/colors';
 
+.container {
+  width: 100%;
+  background-color: colors.$cinzaclaro;
+}
+
 .main {
   display: flex;
   flex-direction: row;
@@ -7,7 +12,7 @@
   align-items: center;
   width: 100%;
   height: 100rem;
-  background-color: colors.$cinzaclaro;
+  // background-color: colors.$azulclaro;
 }
 
 .btn-step {
@@ -21,6 +26,7 @@
   width: 5rem;
   height: 5rem;
   background-position: center;
+  border-radius: 1rem;
 }
 
 .btn-step:hover {

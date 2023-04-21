@@ -1,12 +1,27 @@
-import './header.scss'
+import './style.scss'
+import { useNavigate } from 'react-router-dom';
 
 export default function Header() {
+    const navigate = useNavigate();
+
+    function handleHome() {
+        return navigate('/');
+    }
+
+    function handleAbout() {
+        return navigate('/about');
+    }
+
+    function handleSocial() {
+        return navigate('/social');
+    }
+
     return (
         <header className="container">
             <div className="header">
-                <a className="header-comp">Home</a>
-                <a className="header-comp">Sobre</a>
-                <a className="header-comp">Redes Sociais</a>
+                <button onClick={handleHome}>Home</button>
+                <button onClick={handleAbout}>Sobre</button>
+                <button onClick={handleSocial}>Redes Sociais</button>
             </div>
         </header>
     )

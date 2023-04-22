@@ -1,8 +1,14 @@
 @use '../../global/colors';
 
+* {
+  font-family: Verdana, sans-serif;
+}
+
 .container {
   width: 100%;
+  height: 100%;
   background-color: colors.$cinzaclaro;
+  padding: 2rem 0 2rem 0;
 }
 
 .main {
@@ -10,29 +16,52 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
-  height: 100%;
+  width: 65%;
+  padding: 1rem;
+  margin: 3rem;
+  border-radius: 2rem;
   background-color: colors.$cinzaclaro;
 }
 
-// .about-me {
-//   background-color: colors.$cinzaclaro;
-// }
+.about-me {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 1rem;
+}
+
+.title {
+  font-family: cursive;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1.2rem;
+}
+
+.description {
+  font-size: 1.2rem;
+  text-align: center;
+}
 
 .btn-step {
-  width: 5rem;
-  height: 5rem;
+  width: 2rem;
+  height: 4rem;
   border: none;
-  background-color: none;
+  background-color: colors.$cinzaclaro;
+  margin: 2rem;
 }
 
 .btn-step img {
-  width: 5rem;
-  height: 5rem;
+  width: 2rem;
+  height: 4rem;
   background-position: center;
   border-radius: 1rem;
+  background-color: none;
 }
 
 .btn-step:hover {
   cursor: pointer;
+}
+
+.btn-step img:hover {
+  filter:invert(20%);
 }

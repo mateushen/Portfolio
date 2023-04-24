@@ -17,7 +17,7 @@ export default function Header() {
     }
 
     return (
-        <header className="container">
+        <header className="box-header">
             <div className="header">
                 <button onClick={handleHome}>Home</button>
                 <button onClick={handleAbout}>Sobre</button>

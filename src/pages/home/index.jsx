@@ -7,7 +7,6 @@ import next from '../../global/img/icon-next.png'
 import eu from '../../global/img/eu.png';
 
 function Home() {
-
   const [step, setStep] = useState(1);
 
   function buttonClickPrevious() {
@@ -22,6 +21,7 @@ function Home() {
     if(step > 2 || step < 1) {
       setStep(1);
     }
+
   })
 
   return (
@@ -42,19 +42,17 @@ function Home() {
               </span>
             </div>
           )}
-
-          { step == 2 && (
-            <span className="description">Trabalho duro para alcançar meus objetivos e 
+          {step == 2 && (
+            <span className="description">Trabalho duro para alcançar meus objetivos e
               o meu objetivo principal é terminar o curso no fim do ano.
-               Além disso, eu adoro jogar futebol, baralho e jogos eletrônicos, 
-               que me permitem um momento de diversão no meu tempo livre.</span>
+              Além disso, eu adoro jogar futebol, baralho e jogos eletrônicos,
+              que me permitem um momento de diversão no meu tempo livre.</span>
           )}
           <button className="btn-step" onClick={buttonClickNext}><img src={next} /></button>
         </div>
       </div>
       <Footer />
     </>
-
   )
 }
 

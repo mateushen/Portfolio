@@ -5,8 +5,9 @@
     margin: 0;
 }
 
-.container {
+.box-header {
     width: 100%;
+    height: 6rem;
     display: flex;
     justify-content: flex-end;
     background-color: colors.$preto;

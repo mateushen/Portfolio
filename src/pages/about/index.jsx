@@ -8,7 +8,9 @@ function About() {
   return (
     <>
       <Header />
+      <div className="">
 
+      </div>
       <Footer />
     </>
 

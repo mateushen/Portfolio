@@ -1,13 +1,15 @@
 @use '../../global/colors';
 
-* {
+*{
   font-family: Verdana, sans-serif;
 }
 
 .container {
   width: 100%;
   height: 100%;
-  background-color: colors.$cinzaclaro;
+  display: flex;
+  flex-direction: row;
+  background-color: colors.$preto;
   padding: 2rem 0 2rem 0;
 }
 

@@ -1,4 +1,4 @@
-import './style.scss';
+import './card.scss';
 import iconFace from '../../global/img/icon-face.png';
 import iconInsta from '../../global/img/icon-insta.png';
 import iconLinkedin from '../../global/img/icon-linkedin.png';

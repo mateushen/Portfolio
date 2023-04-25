@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import './style.scss'
+import './home.scss'
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import previous from '../../global/img/icon-previous.png'
@@ -45,7 +45,7 @@ function Home() {
           {step == 2 && (
             <span className="description">Trabalho duro para alcançar meus objetivos e
               o meu objetivo principal é terminar o curso no fim do ano.
-              Além disso, eu adoro jogar futebol, baralho e jogos eletrônicos,
+              Além disso, eu adoro jogar futebol, alguns jogos de cartas e também jogos eletrônicos,
               que me permitem um momento de diversão no meu tempo livre.</span>
           )}
           <button className="btn-step" onClick={buttonClickNext}><img src={next} /></button>

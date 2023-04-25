@@ -1,4 +1,4 @@
-import './style.scss'
+import './header.scss'
 import { useNavigate } from 'react-router-dom';
 
 export default function Header() {

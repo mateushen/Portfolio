@@ -1,0 +1,41 @@
+@use '../../global/colors';
+
+.container {
+    display: flex;
+    flex-direction: row;
+}
+
+.container-left {
+    background-color: colors.$preto;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: colors.$branco;
+}
+
+.container-right {
+    background-color: colors.$cinzaclaro;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 1rem;
+    border-radius: 2rem 0 0 0;
+}
+
+.contact {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+}
+
+.bar {
+    margin-top: 1.5rem;
+    margin-bottom: 0.2rem;
+    width: 2rem;
+    height: 4px;
+    background-color: colors.$preto;
+
+}

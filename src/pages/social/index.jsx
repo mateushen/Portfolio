@@ -12,7 +12,9 @@ function Social() {
         <div className="cards">
           <div className="card-line">
             <Card icon='facebook' />
-
+            <Card icon='instagram' />
+            <Card icon='github' />
+            <Card icon='linkedin' />
           </div>
         </div>
       </div>

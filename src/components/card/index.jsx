@@ -4,10 +4,10 @@ import iconInsta from '../../global/img/icon-insta.png';
 import iconLinkedin from '../../global/img/icon-linkedin.png';
 import iconGh from '../../global/img/icon-gh.png';
 
-export default function Card(icon = null) {
+export default function Card({icon = null}) {
     return (
         <div className="card">
-            {icon === "facebook" && (
+            {icon === 'facebook' && (
                 <a href="https://www.facebook.com/mateeus.heenrique.7"><img src={iconFace} alt="icon" width="150" /></a>
             )}
             {icon === 'instagram' && (

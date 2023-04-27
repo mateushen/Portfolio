@@ -1,7 +1,7 @@
 import './projects.scss'
 import { useState, useEffect } from 'react';
 import Header from '../../components/header';
-import Footer from '../../components/footer';
+import iconGh from '../../global/img/icon-gh.png';
 
 function Projects() {
   const [itemsApi, setItemsApi] = useState([])
@@ -29,22 +29,23 @@ function Projects() {
   return (
     <>
       <Header />
-      <div className="container">
+      <div className="container-projects">
+        <h1>PROJETOS</h1>
         {itemsApi.map(item => (
-          <div className="projects" key={item.id}>
+          <div className="projects-gh" key={item.id}>
             <span className="fullname">{item.full_name}</span>
-            <h2>{item.name.toUpperCase()}</h2>
-            <a href={item.url}>URL: {item.html_url}</a>
-            <span className="date">Data da criação: {Intl.DateTimeFormat('pt-BR')
-              .format(new Date(item.created_at))}
-            </span>
-            <a href="https://github.com/mateushen" target="_blank" rel="noreferrer">
-
-            </a>
+            <h2 className="title-project">{item.name.toUpperCase()}</h2>
+            <div className="description-project">
+              <span className="date">Data da criação: {Intl.DateTimeFormat('pt-BR')
+                .format(new Date(item.created_at))}</span>
+                <div className="url">
+                  <a href={item.html_url} className="url">
+                    <img src={iconGh} width="20" />Acessar o projeto</a>
+                </div>
+            </div>
           </div>
         ))}
       </div>
-      <Footer />
     </>
   )
 }

@@ -1,54 +1,32 @@
-import { useEffect, useState } from 'react'
-import './home.scss'
+import './home.scss';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
-import previous from '../../global/img/icon-previous.png'
-import next from '../../global/img/icon-next.png'
 import eu from '../../global/img/eu.png';
+import Card from '../../components/card';
 
 function Home() {
-  const [step, setStep] = useState(1);
-
-  function buttonClickPrevious() {
-    setStep(step - 1);
-  }
-
-  function buttonClickNext() {
-    setStep(step + 1);
-  }
-
-  useEffect(() => {
-    if(step > 2 || step < 1) {
-      setStep(1);
-    }
-
-  })
-
   return (
     <>
       <Header />
       <div className="container">
-        <img src={eu} width="500" />
-        <div className="main">
-          <button className="btn-step" onClick={buttonClickPrevious}><img src={previous} /></button>
-          {step == 1 && (
-            <div className="about-me">
-              <h2 className="title">Um pouco sobre mim!</h2>
-              <span className="description">
-                Meu nome é Mateus, tenho 21 anos e nasci em Virginópolis.
-                Desde cedo, desenvolvi um grande interesse na área de TI
-                (Tecnologia da Informação), o que me levou a cursar Sistemas de
-                Informação no IFMG Campus Sâo João Evangelista.
-              </span>
+        <div className="container-left">
+          <div className="container-cards">
+          <h2>MATEUS HENRIQUE</h2>
+            <img src={eu} width="150" />
+            <div className="card-line">
+              <Card icon='facebook' />
+              <Card icon='instagram' />
+              <Card icon='linkedin' />
+              <Card icon='github' />
             </div>
-          )}
-          {step == 2 && (
-            <span className="description">Trabalho duro para alcançar meus objetivos e
-              o meu objetivo principal é terminar o curso no fim do ano.
-              Além disso, eu adoro jogar futebol, alguns jogos de cartas e também jogos eletrônicos,
-              que me permitem um momento de diversão no meu tempo livre.</span>
-          )}
-          <button className="btn-step" onClick={buttonClickNext}><img src={next} /></button>
+          </div>
+        </div>
+
+        <div className="container-right">
+
+          <h2>SOBRE MIM</h2>
+          <div className="bar"></div>
+
         </div>
       </div>
       <Footer />

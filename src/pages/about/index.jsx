@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import './about.scss'
 import Header from '../../components/header';
 import Footer from '../../components/footer';
@@ -14,9 +13,6 @@ function About() {
       <div className="container">
         <div className="container-left">
           <img src={eu} width="200" />
-          <div className="info">
-            <h2>FORMAÇÃO</h2>
-          </div>
         </div>
 
         <div className="container-right">

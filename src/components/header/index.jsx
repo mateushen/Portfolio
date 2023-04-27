@@ -8,20 +8,20 @@ export default function Header() {
         return navigate('/');
     }
 
-    function handleAbout() {
-        return navigate('/about');
+    function handleProjects() {
+        return navigate('/projects');
     }
 
-    function handleSocial() {
-        return navigate('/social');
+    function handleAbout() {
+        return navigate('/about');
     }
 
     return (
         <header className="box-header">
             <div className="header">
                 <button onClick={handleHome}>Home</button>
+                <button onClick={handleProjects}>Projetos</button>
                 <button onClick={handleAbout}>Sobre</button>
-                <button onClick={handleSocial}>Redes Sociais</button>
             </div>
         </header>
     )

@@ -11,6 +11,8 @@
     display: flex;
     justify-content: flex-end;
     background-color: colors.$cianoprimary;
+    border-bottom: 4px solid colors.$cinzasecondary;
+    padding: 1rem;
 }
 
 .header {

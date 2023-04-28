@@ -9,7 +9,7 @@
   height: 100%;
   display: flex;
   flex-direction: row;
-  background-color: colors.$cianoprimary;
+  background: linear-gradient(180deg, colors.$cianoprimary, colors.$preto);
 }
 
 .container-left {

@@ -2,6 +2,7 @@ import './projects.scss'
 import { useState, useEffect } from 'react';
 import Header from '../../components/header';
 import iconGh from '../../global/img/icon-gh.png';
+import logoGh from '../../global/img/icon-gh2.png';
 
 function Projects() {
   const [itemsApi, setItemsApi] = useState([])
@@ -30,21 +31,30 @@ function Projects() {
     <>
       <Header />
       <div className="container-projects">
-        <h1>PROJETOS</h1>
+        <div className="container-title">
+          <h1 className="title-page">PROJETOS</h1>
+          <img src={logoGh} width="100" />
+        </div>
+
         {itemsApi.map(item => (
           <div className="projects-gh" key={item.id}>
             <span className="fullname">{item.full_name}</span>
             <h2 className="title-project">{item.name.toUpperCase()}</h2>
             <div className="description-project">
-              <span className="date">Data da criação: {Intl.DateTimeFormat('pt-BR')
-                .format(new Date(item.created_at))}</span>
-                <div className="url">
-                  <a href={item.html_url} className="url">
-                    <img src={iconGh} width="20" />Acessar o projeto</a>
-                </div>
+              <div className="url">
+                <div className="topic"></div>
+                <span className="language">{item.language}</span>
+              </div>
+              <div className="url">
+                <a href={item.html_url} className="url">
+                  <img src={iconGh} width="20" />Acessar o projeto</a>
+              </div>
             </div>
+            <span className="date">Data da criação: {Intl.DateTimeFormat('pt-BR')
+              .format(new Date(item.created_at))}</span>
           </div>
         ))}
+
       </div>
     </>
   )

@@ -5,13 +5,15 @@
     flex-direction: column;
     width: 100%;
     align-items: center;
-    margin-top: 5rem;
+    margin-top: 9rem;
+    color: colors.$preto;
 }
 
 .contact {
     display: flex;
     align-items: center;
     margin: 0.5rem;
+    color: colors.$preto;
 }
 
 .title-about {

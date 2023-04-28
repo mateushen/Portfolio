@@ -59,15 +59,15 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 40%;
-  margin-top: 8rem;
+  width: 60%;
+  margin-top: 6rem;
 }
 
 p {
   font-size: 0.8rem;
 }
 
-.container-about {
+.container-aboutme {
   width: auto;
   height: auto;
   border: 2px solid colors.$cinzaescuro;
@@ -86,5 +86,5 @@ p {
   color: colors.$cinzaclaro;
   border-radius: 0.5rem;
   margin: 0;
-  padding: 0.5rem;
+  padding: 1rem;
 }

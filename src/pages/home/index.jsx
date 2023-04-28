@@ -29,18 +29,16 @@ function Home() {
             </div>
           </div>
 
-
           <div className="about-me">
             <h2 className="title-aboutme">Habilidades</h2>
             <div className="container-skills">
-              <img src={iconC} width="55" />
-              <img src={iconCPP} width="55" />
-              <img src={iconCSharp} width="55" />
-              <img src={iconHtml} width="55" />
-              <img src={iconCss} width="55" />
-              <img src={iconPhp} width="55" />
-              <img src={iconPhp} width="55" />
-              <img src={iconJs} width="55" />
+              <img src={iconC} width="80" />
+              <img src={iconCPP} width="80" />
+              <img src={iconCSharp} width="80" />
+              <img src={iconHtml} width="80" />
+              <img src={iconCss} width="80" />
+              <img src={iconPhp} width="80" />
+              <img src={iconJs} width="80" />
             </div>
 
           </div>
@@ -50,7 +48,7 @@ function Home() {
 
           <div className="about-me">
             <h2 className="title-aboutme">SOBRE MIM</h2>
-            <div className="container-about">
+            <div className="container-aboutme">
               <p>
                 Lorem ipsum dolor sit, amet consectetur adipisicing elit. Totam voluptatum, nemo libero eligendi at, cupiditate velit reprehenderit sed, obcaecati numquam ducimus rerum quod facilis quis magnam sapiente voluptatibus natus? Debitis?
               </p>

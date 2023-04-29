@@ -19,9 +19,9 @@ export default function Header() {
     return (
         <header className="box-header">
             <div className="header">
-                <button onClick={handleHome}>Home</button>
-                <button onClick={handleProjects}>Projetos</button>
-                <button onClick={handleAbout}>Sobre</button>
+                <button className="header-button" onClick={handleHome}>Home</button>
+                <button className="header-button" onClick={handleProjects}>Projetos</button>
+                <button className="header-button" onClick={handleAbout}>Sobre</button>
             </div>
         </header>
     )

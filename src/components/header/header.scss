@@ -12,7 +12,7 @@
     justify-content: flex-end;
     background-color: colors.$cianoprimary;
     border-bottom: 4px solid colors.$cinzasecondary;
-    padding: 1rem;
+    padding: 0.5rem 0 0.5rem 0;
 }
 
 .header {
@@ -25,7 +25,7 @@
     border-bottom: 2px solid colors.$cinzaclaro;
 }
 
-button {
+.header-button {
     background-color: colors.$cianoprimary;
     border: none;
     color: colors.$branco;

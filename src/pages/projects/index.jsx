@@ -1,6 +1,7 @@
 import './projects.scss'
 import { useState, useEffect } from 'react';
 import Header from '../../components/header';
+import Footer from '../../components/footer';
 import iconGh from '../../global/img/icon-gh.png';
 import logoGh from '../../global/img/icon-gh2.png';
 
@@ -56,6 +57,7 @@ function Projects() {
         ))}
 
       </div>
+      <Footer />
     </>
   )
 }

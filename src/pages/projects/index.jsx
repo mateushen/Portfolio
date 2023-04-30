@@ -3,7 +3,6 @@ import { useState, useEffect } from 'react';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
 import iconGh from '../../global/img/icon-gh.png';
-import logoGh from '../../global/img/icon-gh2.png';
 
 function Projects() {
   const [itemsApi, setItemsApi] = useState([])
@@ -34,7 +33,6 @@ function Projects() {
       <div className="container-projects">
         <div className="container-title">
           <h1 className="title-page">PROJETOS</h1>
-          <img src={logoGh} width="100" />
         </div>
 
         {itemsApi.map(item => (
@@ -48,7 +46,7 @@ function Projects() {
               </div>
               <div className="url">
                 <a href={item.html_url} className="url">
-                  <img src={iconGh} width="20" />Acessar o projeto</a>
+                  <img src={iconGh} width="20" />Acessar repositório</a>
               </div>
             </div>
             <span className="date">Data da criação: {Intl.DateTimeFormat('pt-BR')

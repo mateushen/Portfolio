@@ -10,9 +10,16 @@ import iconCPP from '../../global/img/cpp.png';
 import iconCSharp from '../../global/img/csharp.png';
 import iconHtml from '../../global/img/html.png';
 import iconCss from '../../global/img/css.png';
+import { useNavigate } from 'react-router-dom';
 
 
 function Home() {
+  const navigate = useNavigate();
+
+  function handleProjects() {
+      return navigate('/projects');
+  }
+
   return (
     <>
       <Header />
@@ -30,7 +37,7 @@ function Home() {
             </div>
           </div>
 
-          <div style={{ marginLeft: "15rem" }} className="about-me">
+          <div style={{ marginLeft: "15rem" }} className="my-skills">
             <h2 className="title-aboutme">Habilidades</h2>
             <div className="container-skills">
               <img src={iconC} width="80" />
@@ -41,6 +48,8 @@ function Home() {
               <img src={iconPhp} width="80" />
               <img src={iconJs} width="80" />
             </div>
+
+            <button className="my-projects" onClick={handleProjects}>VER PROJETOS...</button>
 
           </div>
         </div>
@@ -93,7 +102,6 @@ function Home() {
               </p>
             </div>
           </div>
-
 
         </div>
       </div>

@@ -82,3 +82,30 @@ a {
     font-size: 1rem;
     color: colors.$cianosecondary;
 }
+
+@media (max-width: 600px) {
+    .projects-gh{
+        width: 75%;
+    }
+    .fullname {
+        font-size: 0.5rem;
+    }
+    .title-project {
+        font-size: 1.2rem;
+    }
+    .language{
+        font-size: 0.8rem;
+    }
+    .description-project {
+        flex-direction: column;
+        margin-top: 0.8rem;
+        align-items: baseline;
+    }
+    .url{
+        margin-top: 0.4rem;
+    }
+    .date {
+        margin-top: 0.3rem;
+        margin-left: 8rem;
+    }
+}

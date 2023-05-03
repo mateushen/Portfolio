@@ -42,10 +42,12 @@ button:hover {
 
 @media (max-width: 600px) {
     .header {
-        flex-direction: column;
-        height: 6rem;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 80%;
+        padding: 0.3rem;
     }
-    .box-header{
-        height: 7rem;
+    .header-button{
+        font-size: 0.9rem;
     }
 }

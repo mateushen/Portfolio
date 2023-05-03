@@ -153,12 +153,24 @@ p {
   }
   .my-skills {
     margin-left: 0;
+    width: 80%;
+  }
+  .container-skills img {
+    width: 60px;
+  }
+  .container-skills img:hover {
+    width: 61px;
+  }
+  .about-me{
+    width: 75%;
   }
   .training {
     margin-right: 0;
+    width: 75%;
   }
   .motivation {
     margin-left: 0;
+    width: 75%;
   }
   .title {
     text-align: center;

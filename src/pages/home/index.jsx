@@ -27,7 +27,7 @@ function Home() {
         <div className="container-left">
           <div className="container-cards">
             <h2 className="title">MATEUS HENRIQUE</h2>
-            <span className="subtitle">ESTUDANTE</span>
+            <span className="subtitle">ESTUDANTEAAA</span>
             <img src={eu} width="150" />
             <div className="card-line">
               <Card icon='linkedin' />

@@ -96,7 +96,7 @@ function Home() {
               </p>
               <br />
               <p>
-                Eu sou empenhado em alcançar seus objetivos. Eu valorizo meus
+                Eu sou empenhado em alcançar meus objetivos. Eu valorizo meus
                 esforços e todas as dificuldades que passo, acredito que isso
                 me fará evoluir cada vez mais, tanto no quesito pessoal,
                 quanto no profissional.

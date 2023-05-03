@@ -24,6 +24,7 @@ function Home() {
     <>
       <Header />
       <div className="container-home">
+
         <div className="container-left">
           <div className="container-cards">
             <h2 className="title">MATEUS HENRIQUE</h2>
@@ -37,8 +38,8 @@ function Home() {
             </div>
           </div>
 
-          <div style={{ marginLeft: "15rem" }} className="my-skills">
-            <h2 className="title-aboutme">Habilidades</h2>
+          <div className="my-skills">
+            <h2 className="title-aboutme">HABILIDADES</h2>
             <div className="container-skills">
               <img src={iconC} width="80" />
               <img src={iconCPP} width="80" />
@@ -67,7 +68,7 @@ function Home() {
             </div>
           </div>
 
-          <div style={{ marginRight: "15rem" }} className="about-me">
+          <div className="training">
             <h2 className="title-aboutme">FORMAÇÃO</h2>
             <div className="container-aboutme">
               <p>↪ Ensino Fundamental ↩</p>
@@ -87,8 +88,8 @@ function Home() {
             </div>
           </div>
 
-          <div style={{ marginLeft: "15rem" }} className="about-me">
-            <h2 className="title-aboutme">INSPIRAÇÃO</h2>
+          <div className="motivation">
+            <h2 className="title-aboutme">MOTIVAÇÃO</h2>
             <div className="container-aboutme">
               <p>
                 "Nunca desista dos seus objetivos!"

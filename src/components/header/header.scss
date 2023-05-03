@@ -39,3 +39,13 @@ button:hover {
     color: colors.$cinzaclaro;
     cursor: pointer;
 }
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        height: 6rem;
+    }
+    .box-header{
+        height: 7rem;
+    }
+}

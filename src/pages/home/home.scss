@@ -10,6 +10,7 @@
   display: flex;
   flex-direction: row;
   background: linear-gradient(180deg, colors.$cianoprimary, colors.$preto);
+  align-items: center;
 }
 
 .container-left {
@@ -65,12 +66,31 @@
   margin-top: 6rem;
 }
 
+.training {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  margin-top: 6rem;
+  margin-right: 15rem;
+}
+
+.motivation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 45%;
+  margin-top: 6rem;
+  margin-left: 15rem;
+}
+
 .my-skills {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 45%;
   margin-top: 4rem;
+  margin-left: 15rem;
 }
 
 p {
@@ -115,7 +135,7 @@ p {
   border-radius: 0px 30px 0px 30px;
   -moz-border-radius: 0px 30px 0px 30px;
   -webkit-border-radius: 0px 30px 0px 30px;
-  width:15rem;
+  width: 15rem;
   padding: 0.5rem;
   margin-top: 2rem;
   font-size: 20px;
@@ -125,4 +145,34 @@ p {
   cursor: pointer;
   position: relative;
   top: 2px;
+}
+
+@media (max-width: 600px) {
+  .container-home {
+    flex-direction: column;
+  }
+  .my-skills {
+    margin-left: 0;
+  }
+  .training {
+    margin-right: 0;
+  }
+  .motivation {
+    margin-left: 0;
+  }
+  .title {
+    text-align: center;
+  }
+  .card-line {
+    width: 58%;
+  }
+  .container-aboutme {
+    width: 100%;
+  }
+  .container-left{
+    width: 100%;
+  }
+  .container-right{
+    width: 100%;
+  }
 }

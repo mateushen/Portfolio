@@ -18,43 +18,57 @@ function Projects() {
           }
           var data = await res.json()
           setItemsApi(data)
+
         })
         .catch(e => console.log(e))
     }
 
     getGitHubAPI()
 
+    removeItem = (id) => {
+      const filteredItems = this.state.items.filter(item => item.id !== id);
+      this.setState({ items: filteredItems });
+    }
+
+    removeItem(636388134);
+
     return () => abortController.abort();
   }, [])
+
+  console.log(itemsApi);
 
   return (
     <>
       <Header />
-      <div className="container-projects">
+
+      <div className="container-main-projects">
         <div className="container-title">
           <h1 className="title-page">PROJETOS</h1>
         </div>
 
-        {itemsApi.map(item => (
-          <div className="projects-gh" key={item.id}>
-            <span className="fullname">{item.full_name}</span>
-            <h2 className="title-project">{item.name.toUpperCase()}</h2>
-            <div className="description-project">
-              <div className="url">
-                <div className="topic"></div>
-                <span className="language">{item.language}</span>
+        <div className="container-projects">
+          {itemsApi.map(item => (
+            <div className="projects-gh" key={item.id}>
+              <span className="fullname">{item.full_name}</span>
+              <h2 className="title-project">{item.name.toUpperCase()}</h2>
+              <div className="description-project">
+                <div className="url">
+                  <div className="topic"></div>
+                  <span className="language">{item.language}</span>
+                </div>
+                <div className="url">
+                  <a href={item.html_url} className="url" target="_blank">
+                    <img src={iconGh} width="20" />Acessar repositório</a>
+                </div>
               </div>
-              <div className="url">
-                <a href={item.html_url} className="url" target="_blank">
-                  <img src={iconGh} width="20" />Acessar repositório</a>
-              </div>
+              <span className="date">Data da criação: {Intl.DateTimeFormat('pt-BR')
+                .format(new Date(item.created_at))}</span>
             </div>
-            <span className="date">Data da criação: {Intl.DateTimeFormat('pt-BR')
-              .format(new Date(item.created_at))}</span>
-          </div>
-        ))}
+          ))}
 
+        </div>
       </div>
+
       <Footer />
     </>
   )

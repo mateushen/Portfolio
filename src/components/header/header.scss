@@ -35,9 +35,11 @@
     text-transform: uppercase;
 }
 
-button:hover {
+.header-button:hover {
     color: colors.$cinzaclaro;
     cursor: pointer;
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
 }
 
 @media (max-width: 600px) {

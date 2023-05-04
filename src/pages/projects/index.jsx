@@ -45,7 +45,7 @@ function Projects() {
                 <span className="language">{item.language}</span>
               </div>
               <div className="url">
-                <a href={item.html_url} className="url">
+                <a href={item.html_url} className="url" target="_blank">
                   <img src={iconGh} width="20" />Acessar repositório</a>
               </div>
             </div>

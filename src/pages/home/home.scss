@@ -141,10 +141,9 @@ p {
   font-size: 20px;
 }
 
-.my-projects:active {
+.my-projects:hover {
   cursor: pointer;
-  position: relative;
-  top: 2px;
+  background-color: colors.$azulsecondary;
 }
 
 @media (max-width: 600px) {

@@ -5,7 +5,7 @@ import Footer from '../../components/footer';
 import iconGh from '../../global/img/icon-gh.png';
 
 function Projects() {
-  const [itemsApi, setItemsApi] = useState([])
+  const [itemsApi, setItemsApi] = useState([]);
 
   useEffect(() => {
     let abortController = new AbortController();
@@ -16,26 +16,27 @@ function Projects() {
           if (!res.ok) {
             throw new Error(res.status)
           }
-          var data = await res.json()
-          setItemsApi(data)
+          var data = await res.json();
+
+          if (data) {
+            const index = data.findIndex(item => item.id === 636388134);
+            if (index !== -1) {
+              const newItems = [...data];
+              newItems.splice(index, 1);
+              setItemsApi(newItems);
+            }
+          }
 
         })
         .catch(e => console.log(e))
     }
 
-    getGitHubAPI()
-
-    removeItem = (id) => {
-      const filteredItems = this.state.items.filter(item => item.id !== id);
-      this.setState({ items: filteredItems });
-    }
-
-    removeItem(636388134);
+    getGitHubAPI();
 
     return () => abortController.abort();
   }, [])
 
-  console.log(itemsApi);
+  console.log(itemsApi)
 
   return (
     <>
@@ -65,7 +66,6 @@ function Projects() {
                 .format(new Date(item.created_at))}</span>
             </div>
           ))}
-
         </div>
       </div>
 

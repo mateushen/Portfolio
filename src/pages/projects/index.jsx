@@ -42,30 +42,34 @@ function Projects() {
       <Header />
 
       <div className="container-main-projects">
+
         <div className="container-title">
-          <h1 className="title-page">PROJETOS</h1>
+          <h1 className="title-page-projects">PROJETOS</h1>
         </div>
 
-        <div className="container-projects">
+        <div className="grid-projects">
+
           {itemsApi.map(item => (
-            <div className="projects-gh" key={item.id}>
-              <span className="fullname">{item.full_name}</span>
-              <h2 className="title-project">{item.name.toUpperCase()}</h2>
-              <div className="description-project">
-                <div className="url">
-                  <div className="topic"></div>
-                  <span className="language">{item.language}</span>
+            <div className="container-projects" key={item.id}>
+              <div className="box-projects">
+
+                <h2 className="title-project">{item.name.toUpperCase()}</h2>
+
+                <div className="info-project">
+                  <div className="topic"></div><span className="language" style={{ marginLeft: "0.5rem" }}>{item.language}</span>
                 </div>
-                <div className="url">
+
+                <div className="info-project" style={{ marginTop: "2rem" }}>
                   <a href={item.html_url} className="view-project" target="_blank">
-                    <img src={iconGh} width="20" style={{marginLeft:"0.5rem"}} />ACESSAR</a>
+                    <img src={iconGh} width="20" style={{ marginLeft: "0.5rem" }} />ACESSAR
+                  </a>
                 </div>
+
               </div>
-              <span className="date">Data da criação: {Intl.DateTimeFormat('pt-BR')
-                .format(new Date(item.created_at))}</span>
             </div>
           ))}
         </div>
+
       </div>
 
       <Footer />

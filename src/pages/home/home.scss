@@ -1,7 +1,7 @@
 @use '../../global/colors';
 
 * {
-  font-family: Verdana, sans-serif;
+  font-family: Poppins,sans-serif;
 }
 
 .container-home {
@@ -117,7 +117,6 @@ p {
 }
 
 .container-skills img:hover {
-  width: 81px;
   cursor: pointer;
   -webkit-transform:scale(1.1);
   transform:scale(1.1);
@@ -146,7 +145,7 @@ p {
   background-color: colors.$azulsecondary;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .container-home {
     flex-direction: column;
   }
@@ -180,10 +179,25 @@ p {
   .container-aboutme {
     width: 100%;
   }
+  p{
+    font-size: 1rem;
+  }
   .container-left{
     width: 100%;
   }
   .container-right{
     width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .training{
+    margin-right: 5rem;
+  }
+  .motivation{
+    margin-left: 5rem
+  }
+  .my-skills{
+    margin-left: 5rem
   }
 }

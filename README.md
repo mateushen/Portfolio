@@ -34,4 +34,3 @@ Contribuições são sempre bem-vindas! Se você quiser contribuir com o projeto
 2. Crie uma nova branch com um nome descritivo para sua funcionalidade ou correção de bug.
 3. Faça suas alterações e teste-as cuidadosamente.
 4. Envie um pull request detalhando as alterações feitas e o motivo.
-

@@ -2,7 +2,7 @@ import './projects.scss'
 import { useState, useEffect } from 'react';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
-import iconGh from '../../global/img/icon-gh.png';
+import iconGh from '../../global/img/icon-gh2.png';
 
 function Projects() {
   const [itemsApi, setItemsApi] = useState([]);
@@ -26,7 +26,6 @@ function Projects() {
               setItemsApi(newItems);
             }
           }
-
         })
         .catch(e => console.log(e))
     }
@@ -58,8 +57,8 @@ function Projects() {
                   <span className="language">{item.language}</span>
                 </div>
                 <div className="url">
-                  <a href={item.html_url} className="url" target="_blank">
-                    <img src={iconGh} width="20" />Acessar repositório</a>
+                  <a href={item.html_url} className="view-project" target="_blank">
+                    <img src={iconGh} width="20" style={{marginLeft:"0.5rem"}} />ACESSAR</a>
                 </div>
               </div>
               <span className="date">Data da criação: {Intl.DateTimeFormat('pt-BR')

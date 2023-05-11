@@ -70,7 +70,7 @@
   align-items: center;
   width: 45%;
   margin-top: 6rem;
-  margin-right: 15rem;
+  margin-left: 8rem;
 }
 
 .motivation {
@@ -79,7 +79,7 @@
   align-items: center;
   width: 45%;
   margin-top: 6rem;
-  margin-left: 15rem;
+  margin-left: 4rem;
 }
 
 .my-skills {
@@ -150,7 +150,7 @@ p {
     flex-direction: column;
   }
   .my-skills {
-    margin-left: 0;
+    margin-right: 5rem;
     width: 80%;
   }
   .container-skills img {
@@ -163,11 +163,11 @@ p {
     width: 75%;
   }
   .training {
-    margin-right: 0;
+    margin-left: 5rem;
     width: 75%;
   }
   .motivation {
-    margin-left: 0;
+    margin-right: 5rem;
     width: 75%;
   }
   .title {

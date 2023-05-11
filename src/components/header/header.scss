@@ -38,14 +38,15 @@
 .header-button:hover {
     color: colors.$cinzaclaro;
     cursor: pointer;
-    -webkit-transform:scale(1.1);
-    transform:scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }
 
-@media (max-width: 320px) {
-    .box-header{
+@media only screen and (min-width:0px) and (max-width: 480px) {
+    .box-header {
         justify-content: center;
     }
+
     .header {
         flex-direction: row;
         justify-content: space-evenly;
@@ -53,36 +54,26 @@
         padding: 0.3rem;
         margin-right: 0;
     }
-    .header-button{
+
+    .header-button {
         font-size: 0.8rem;
     }
 }
 
-@media (max-width: 480px) {
+@media only screen and (min-width:480px) and (max-width: 768px) {
     .header {
         flex-direction: row;
-        width: 70%;
+        width: 100%;
         padding: 0.3rem;
         margin-right: 0;
     }
-    .header-button{
-        font-size: 0.8rem;
+
+    .header-button {
+        font-size: 0.9rem;
     }
 }
 
-@media (max-width: 768px) {
-    .header {
-        justify-content: space-evenly;
-        padding: 0.3rem;
-        margin-right: 0;
-        align-items: center;
-    }
-    .header-button{
-        font-size: 1rem;
-    }
-}
-
-@media (max-width: 1024px) {
+@media  only screen and (min-width:768px) and (max-width: 1024px) {
     .header {
         flex-direction: row;
         padding: 0.3rem;

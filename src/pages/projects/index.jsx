@@ -35,8 +35,6 @@ function Projects() {
     return () => abortController.abort();
   }, [])
 
-  console.log(itemsApi)
-
   return (
     <>
       <Header />

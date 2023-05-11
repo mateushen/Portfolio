@@ -17,7 +17,7 @@ function Home() {
   const navigate = useNavigate();
 
   function handleProjects() {
-      return navigate('/projects');
+    return navigate('/projects');
   }
 
   return (
@@ -71,19 +71,19 @@ function Home() {
           <div className="training">
             <h2 className="title-aboutme">FORMAÇÃO</h2>
             <div className="container-aboutme">
-              <p>↪ Ensino Fundamental ↩</p>
-              <p>
-                Escola Estadual Professor Francisco Dias
+              <p>↪ Ensino Fundamental ↩ <br />
+                Escola Estadual Professor Francisco Dias <br />
+                2008 - 2016
               </p>
               <br />
-              <p>↪ Ensino Médio ↩</p>
-              <p>
-                Escola Estadual Nossa Senhora do Patrocínio
+              <p>↪ Ensino Médio ↩ <br />
+                Escola Estadual Nossa Senhora do Patrocínio <br />
+                2016 - 2019
               </p>
               <br />
-              <p>↪ Ensino Superior ↩</p>
-              <p>
-                IFMG - Campus São João Evangelista
+              <p>↪ Ensino Superior ↩ <br />
+                IFMG - Campus São João Evangelista <br />
+                2020
               </p>
             </div>
           </div>
@@ -106,7 +106,7 @@ function Home() {
 
         </div>
       </div>
-      <Footer/>
+      <Footer />
     </>
   )
 }

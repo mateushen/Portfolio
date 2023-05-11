@@ -64,6 +64,9 @@ function Home() {
                 Meu nome é Mateus, tenho 21 anos e nasci em Virginópolis. Desde cedo,
                 desenvolvi um grande interesse na área de TI (Tecnologia da Informação),
                 o que me levou a cursar Sistemas de Informação no IFMG Campus Sâo João Evangelista.
+                Ainda não tive nenhuma experiência de serviço na area de TI, e os projetos que tenho,
+                foram desenvolvidos como trabalhos práticos em algumas disciplinas.
+                Gosto de trabalhar na busca de soluções e acredito que tenho facilidade em aprender.
               </p>
             </div>
           </div>

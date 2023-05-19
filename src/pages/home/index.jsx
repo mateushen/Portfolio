@@ -109,10 +109,6 @@ function Home() {
 
         </div>
       </div>
-      <div className="container-end">
-          <img height="160em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=mateushen&layout=compact&langs_count=7&theme=github_dark" />
-        </div>
-
       <Footer />
     </>
   )

@@ -144,6 +144,15 @@ p {
   background-color: colors.$azulsecondary;
 }
 
+.container-end{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  background-color: colors.$preto;
+}
+
 @media (max-width: 768px) {
   .container-home {
     flex-direction: column;

@@ -1,13 +1,14 @@
 # Portfólio de Mateus Henrique
 
-Este projeto é um portfólio pessoal desenvolvido por Mateus Henrique para exibir seus projetos e habilidades em desenvolvimento web. O portfólio pode ser acessado [aqui](https://mateushen.github.io/Portfolio/).
+Este projeto é um portfólio pessoal desenvolvido por Mateus Henrique para exibir seus projetos e habilidades em desenvolvimento web. O portfólio pode ser acessado [aqui](https://portfolio-mateus.bohr.io/).
 
 ## Tecnologias Utilizadas
 
 O portfólio foi desenvolvido utilizando as seguintes tecnologias:
 
 - ReactJs
-- SCSS
+- CSS
+- SASS
 - JavaScript
 
 ## Funcionalidades

@@ -6,8 +6,8 @@ Este projeto é um portfólio pessoal desenvolvido por Mateus Henrique para exib
 
 O portfólio foi desenvolvido utilizando as seguintes tecnologias:
 
-- HTML
-- CSS
+- ReactJs
+- SCSS
 - JavaScript
 
 ## Funcionalidades

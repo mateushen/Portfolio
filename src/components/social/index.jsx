@@ -1,4 +1,4 @@
-import './card.scss';
+import './social.scss';
 import iconFace from '../../global/img/icon-face.png';
 import iconInsta from '../../global/img/icon-insta.png';
 import iconLinkedin from '../../global/img/icon-linkedin.png';
@@ -6,7 +6,7 @@ import iconGh from '../../global/img/icon-gh.png';
 
 export default function Card({icon}) {
     return (
-        <div className="card">
+        <div className="social-icon">
             {icon === 'facebook' && (
                 <a href="https://www.facebook.com/mateeus.heenrique.7" target="_blank"><img src={iconFace} alt="icon" width="30" /></a>
             )}

@@ -1,199 +1,51 @@
 @use '../../global/colors';
-@import url('https://fonts.cdnfonts.com/css/gagalin');
 
-.container-home {
+.home-container {
   width: 100%;
-  height: 100%;
   display: flex;
-  flex-direction: row;
-  background: linear-gradient(180deg, colors.$cianoprimary, colors.$preto);
-  align-items: center;
+  justify-content: flex-end;
+  background: colors.$preto;
 }
 
-.container-left {
-  width: 35%;
+.aboutme-container {
+  width: 30%;
   display: flex;
   flex-direction: column;
-  color: colors.$cinzaclaro;
+  padding: 5rem;
   align-items: center;
-  margin-bottom: 2rem;
-}
-
-.container-right {
-  width: 65%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 2rem;
-}
-
-.container-cards {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  position: fixed;
+  left: 0;
   margin-top: 5rem;
 }
 
-.card-line {
-  width: 80%;
-  display: flex;
-  flex-direction: row;
-  margin-top: 1.5rem;
-  padding: 0.5rem 0 0.5rem 0.5rem;
-}
-
-.title-aboutme {
-  color: colors.$cinzaclaro;
-  margin-top: 2rem;
-  margin-bottom: 0.4rem;
+.name {
+  color: colors.$branco;
+  margin: 1rem;
 }
 
 .subtitle {
-  margin: 0.8rem;
-  font-size: 0.8rem;
-  color: colors.$cinzaclaro;
-}
-
-.about-me {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 45%;
-  margin-top: 6rem;
-}
-
-.training {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 45%;
-  margin-top: 6rem;
-  margin-left: 8rem;
-}
-
-.motivation {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 45%;
-  margin-top: 6rem;
-  margin-left: 4rem;
-}
-
-.my-skills {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 45%;
-  margin-top: 4rem;
-  margin-left: 15rem;
-}
-
-p {
-  font-size: 0.8rem;
-}
-
-.container-aboutme {
-  width: auto;
-  height: auto;
-  border: 2px solid colors.$cinzaescuro;
-  text-align: center;
-  color: colors.$cinzaclaro;
-  border-radius: 0.5rem;
-  margin: 0;
-  padding: 0.8rem;
-}
-
-.container-skills {
-  width: auto;
-  height: auto;
-  border: 2px solid colors.$cinzaescuro;
-  text-align: center;
-  color: colors.$cinzaclaro;
-  border-radius: 0.5rem;
-  padding: 1rem;
-}
-
-.container-skills img:hover {
-  cursor: pointer;
-  -webkit-transform:scale(1.1);
-  transform:scale(1.1);
-}
-
-.my-projects {
-  font-style: normal;
   color: colors.$branco;
-  background: colors.$azulprimary;
-  border: 0px inset #ffffff;
-  text-shadow: 0px -1px 1px #222222;
-  box-shadow: 4px 4px 2px #000000;
-  -moz-box-shadow: 4px 4px 2px #000000;
-  -webkit-box-shadow: 4px 4px 2px #000000;
-  border-radius: 0px 30px 0px 30px;
-  -moz-border-radius: 0px 30px 0px 30px;
-  -webkit-border-radius: 0px 30px 0px 30px;
-  width: 15rem;
-  padding: 0.5rem;
-  margin-top: 2rem;
-  font-size: 20px;
+  margin: 0.3rem;
 }
 
-.my-projects:hover {
-  cursor: pointer;
-  background-color: colors.$azulsecondary;
+.small-paragraph {
+  color: colors.$cinzaclaro;
+  margin: 1rem;
+  text-align: center;
 }
 
-@media (max-width: 768px) {
-  .container-home {
-    flex-direction: column;
-  }
-  .my-skills {
-    margin-right: 5rem;
-    width: 80%;
-  }
-  .container-skills img {
-    width: 60px;
-  }
-  .container-skills img:hover {
-    width: 61px;
-  }
-  .about-me{
-    width: 75%;
-  }
-  .training {
-    margin-left: 5rem;
-    width: 75%;
-  }
-  .motivation {
-    margin-right: 5rem;
-    width: 75%;
-  }
-  .card-line {
-    width: 58%;
-  }
-  .container-aboutme {
-    width: 100%;
-  }
-  p{
-    font-size: 1rem;
-  }
-  .container-left{
-    width: 100%;
-  }
-  .container-right{
-    width: 100%;
-  }
+.socials {
+  display: flex;
+  width: 50%;
+  align-items: center;
 }
 
-@media (max-width: 1024px) {
-  .training{
-    margin-right: 5rem;
-  }
-  .motivation{
-    margin-left: 5rem
-  }
-  .my-skills{
-    margin-left: 5rem
-  }
+.home-components {
+  width: 50%;
+  float: right;
+  margin-top: 4rem;
+}
+
+.components-list {
+  width: 100%;
 }

@@ -9,20 +9,28 @@
     width: 100%;
     height: 2.5rem;
     display: flex;
-    justify-content: flex-end;
-    background-color: colors.$cianoprimary;
+    justify-content: center;
+    background-color: colors.$preto;
     border-bottom: 4px solid colors.$cinzasecondary;
     padding: 0.5rem 0 0.5rem 0;
+    position: fixed;
 }
 
 .header {
-    width: 40%;
+    width: 35%;
     height: 2rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     margin-right: 2rem;
     border-bottom: 2px solid colors.$cinzaclaro;
+}
+
+.header-icon{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+    margin-left: 5%;
 }
 
 .header-button {

@@ -1,9 +1,13 @@
-.social-icon {
+.social-component {
     width: 100%;
 }
 
-.social-icon img:hover {
+.social-icon{
+    color: #15a2db;
+}
+
+.social-component .social-icon:hover {
     cursor: pointer;
-    -webkit-transform:scale(1.2);
-    transform:scale(1.2);
+    -webkit-transform:scale(1.1);
+    transform:scale(1.1);
 }

@@ -1,23 +1,20 @@
 import './social.scss';
-import iconFace from '../../global/img/icon-face.png';
-import iconInsta from '../../global/img/icon-insta.png';
-import iconLinkedin from '../../global/img/icon-linkedin.png';
-import iconGh from '../../global/img/icon-gh.png';
+import { FacebookLogo, InstagramLogo, GithubLogo, LinkedinLogo } from "@phosphor-icons/react";
 
-export default function Card({icon}) {
+export default function Social({ icon }) {
     return (
-        <div className="social-icon">
+        <div className="social-component">
             {icon === 'facebook' && (
-                <a href="https://www.facebook.com/mateeus.heenrique.7" target="_blank"><img src={iconFace} alt="icon" width="30" /></a>
+                <a href="https://www.facebook.com/mateeus.heenrique.7" target="_blank"><FacebookLogo size={32} weight="bold" className="social-icon" /></a>
             )}
             {icon === 'instagram' && (
-                <a href="https://www.instagram.com/mateus.hen10/" target="_blank"><img src={iconInsta} alt="icon" width="30" /></a>
+                <a href="https://www.instagram.com/mateus.hen10/" target="_blank"><InstagramLogo size={32} weight="bold" className="social-icon" /></a>
             )}
             {icon === 'github' && (
-                <a href="https://github.com/mateushen/" target="_blank"><img src={iconGh} alt="icon" width="30" /></a>
+                <a href="https://github.com/mateushen/" target="_blank"><GithubLogo size={32} weight="bold" className="social-icon" /></a>
             )}
             {icon === 'linkedin' && (
-                <a href="https://www.linkedin.com/in/mateushen001/" target="_blank"><img src={iconLinkedin} alt="icon" width="30" /></a>
+                <a href="https://www.linkedin.com/in/mateushen001/" target="_blank"><LinkedinLogo size={32} weight="bold" className="social-icon" /></a>
             )}
         </div>
     )

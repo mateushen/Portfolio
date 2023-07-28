@@ -1,17 +1,22 @@
 import './home.scss';
 import Header from '../../components/header';
 import Footer from '../../components/footer';
-import Card from '../../components/social';
-import { useNavigate } from 'react-router-dom';
+import Social from '../../components/social';
 import Presentation from '../../components/presentation';
 import Skills from '../../components/skills';
 import Training from '../../components/training';
+import Projects from '../../components/projects';
+import { useState } from 'react';
 
 function Home() {
-  const navigate = useNavigate();
+  const [viewProjects, setViewProjects] = useState(false);
 
   function handleProjects() {
-    return navigate('/projects');
+    setViewProjects(true);
+  }
+
+  function handleHome() {
+    setViewProjects(false);
   }
 
   return (
@@ -24,25 +29,34 @@ function Home() {
           <h2 className="subtitle">Desenvolvedor Front-End</h2>
           <p className="small-paragraph">Navegando no mar de tecnologias front-end com confiança.</p>
           <div className="socials">
-            <Card icon='linkedin' />
-            <Card icon='facebook' />
-            <Card icon='instagram' />
-            <Card icon='github' />
+            <Social icon='facebook' />
+            <Social icon='linkedin' />
+            <Social icon='instagram' />
+            <Social icon='github' />
           </div>
         </div>
 
         <div className="home-components">
-          <div className="components-list">
-            <Presentation />
-            <Skills />
-            <Training />
-            <Footer />
-          </div>
+          {viewProjects ?
+            <div className="components-list">
+              <Projects />
+              <button onClick={handleHome}>Voltar</button>
+            </div>
+            :
+            <div className="components-list">
+              <Presentation />
+              <Skills />
+              <Training />
+              
+              <button onClick={handleProjects}>Ver todos</button>
+            </div>
 
+
+          }
+          <Footer />
         </div>
       </div>
     </>
   )
 }
-
 export default Home;

@@ -1,5 +1,4 @@
 import '../../global/style/style.scss';
-
 import iconPhp from '../../global/img/php.png';
 import iconJs from '../../global/img/js.png';
 import iconC from '../../global/img/c.png';

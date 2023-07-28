@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react';
-import iconGh from '../../global/img/icon-gh2.png';
 import '../../global/style/style.scss';
 
 export default function Projects() {

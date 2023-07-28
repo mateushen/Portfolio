@@ -3,9 +3,9 @@ import Header from '../../components/header';
 import Footer from '../../components/footer';
 import Social from '../../components/social';
 import Presentation from '../../components/presentation';
-import Skills from '../../components/skills';
+import Technologies from '../../components/technologies';
 import Training from '../../components/training';
-import Projects from '../../components/projects';
+import AllProjects from '../../components/allProjects';
 import { useState } from 'react';
 
 function Home() {
@@ -39,13 +39,13 @@ function Home() {
         <div className="home-components">
           {viewProjects ?
             <div className="components-list">
-              <Projects />
+              <AllProjects />
               <button onClick={handleHome}>Voltar</button>
             </div>
             :
             <div className="components-list">
               <Presentation />
-              <Skills />
+              <Technologies />
               <Training />
               
               <button onClick={handleProjects}>Ver todos</button>

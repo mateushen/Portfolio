@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import '../../global/style/style.scss';
 
-export default function Projects() {
+export default function allProjects() {
     const [itemsApi, setItemsApi] = useState([]);
 
     useEffect(() => {
@@ -56,7 +56,7 @@ export default function Projects() {
 
                                 <div className="info-project" style={{ marginTop: "2rem" }}>
                                     <a href={item.html_url} className="view-project" target="_blank">
-                                        <img src={iconGh} width="20" style={{ marginLeft: "0.5rem" }} />ACESSAR
+                                        <img src="" width="20" style={{ marginLeft: "0.5rem" }} />ACESSAR
                                     </a>
                                 </div>
 

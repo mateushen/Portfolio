@@ -1,7 +1,7 @@
 @use '../../global/colors';
 
 .component-container {
-    margin: 3rem;   
+    margin: 3rem 0 0 3rem;   
 }
 
 hr {
@@ -34,4 +34,20 @@ hr {
     cursor: pointer;
     -webkit-transform:scale(1.1);
     transform:scale(1.1);
+}
+
+.component-left {
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+}
+
+.project-container {
+
+}
+
+.vertical-line{
+    width: 1px;
+    height: auto;
+    background-color: colors.$cinzaclaro;
 }

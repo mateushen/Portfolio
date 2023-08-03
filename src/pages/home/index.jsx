@@ -6,6 +6,7 @@ import Presentation from '../../components/presentation';
 import Technologies from '../../components/technologies';
 import Training from '../../components/training';
 import AllProjects from '../../components/allProjects';
+import BestProjects from '../../components/bestProjects';
 import { useState } from 'react';
 
 function Home() {
@@ -40,18 +41,16 @@ function Home() {
           {viewProjects ?
             <div className="components-list">
               <AllProjects />
-              <button onClick={handleHome}>Voltar</button>
+              <button className="button-projects" onClick={handleHome}>Voltar</button>
             </div>
             :
             <div className="components-list">
               <Presentation />
               <Technologies />
               <Training />
-              
-              <button onClick={handleProjects}>Ver todos</button>
+              <BestProjects />
+              <button className="button-projects" onClick={handleProjects}>Ver todos</button>
             </div>
-
-
           }
           <Footer />
         </div>

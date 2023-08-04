@@ -40,14 +40,21 @@ hr {
     display: flex;
     flex-direction: column;
     width: 10%;
+    align-items: center;
 }
 
 .project-container {
+    display: flex;
+}
 
+.folder {
+    color: colors.$cinzaclaro;
+    border: 1px solid colors.$cinzaclaro;
+    border-radius: 45%;
 }
 
 .vertical-line{
     width: 1px;
-    height: auto;
+    height: 100%;
     background-color: colors.$cinzaclaro;
 }

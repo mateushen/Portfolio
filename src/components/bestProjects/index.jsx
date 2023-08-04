@@ -1,16 +1,23 @@
 import '../../global/style/style.scss';
 import { Folder } from '@phosphor-icons/react';
+import { Projects } from './projects';
 
 export default function bestProjects() {
 
     return (
         <div className="component-container">
-            <div className="project-container">
-                <div className="component-left"><Folder size={25} color="#a9a9a9"/><div className="vertical-line"></div></div>
-                <div className="project-description">
-                    
+            <hr />
+            <h2 className="component-title">PRINCIPAIS PROJETOS</h2>
+            {Projects.map(item => (
+                <div className="project-container" key={item.id}>
+                    <div className="component-left"><Folder className="folder" size={25} /><div className="vertical-line"></div></div>
+                    <div className="project-description">
+                        <h3 className="project-title">{item.name}</h3>
+                        <p className="project-language">{item.language}</p>
+                        <a className="project-url" href={item.url}>Ver repositório ➜ </a>
+                    </div>
                 </div>
-            </div>
+            ))}
         </div>
     )
 }

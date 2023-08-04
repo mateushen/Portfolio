@@ -1,8 +1,9 @@
-import { useEffect, useState } from 'react';
 import '../../global/style/style.scss';
+import { useEffect, useState } from 'react';
+import { Folder } from '@phosphor-icons/react';
 
 export default function allProjects() {
-    const [itemsApi, setItemsApi] = useState([]);
+    const [projects, setProjects] = useState([]);
 
     useEffect(() => {
         let abortController = new AbortController();
@@ -20,7 +21,7 @@ export default function allProjects() {
                         if (index !== -1) {
                             const newItems = [...data];
                             newItems.splice(index, 1);
-                            setItemsApi(newItems);
+                            setProjects(newItems);
                         }
                     }
                 })
@@ -36,36 +37,16 @@ export default function allProjects() {
         <div className="component-container">
             <hr />
             <h2 className="component-title">PROJETOS</h2>
-            <div className="container-main-projects">
-
-                <div className="container-title">
-                    <h1 className="title-page-projects">PROJETOS</h1>
+            {projects.map(item => (
+                <div className="project-container" key={item.id}>
+                    <div className="component-left"><Folder className="folder" size={25} /><div className="vertical-line"></div></div>
+                    <div className="project-description">
+                        <h3 className="project-title">{item.name}</h3>
+                        <p className="project-language">{item.language}</p>
+                        <a className="project-url" href={item.html_url}>Ver repositório ➜ </a>
+                    </div>
                 </div>
-
-                <div className="grid-projects">
-
-                    {itemsApi.map(item => (
-                        <div className="container-projects" key={item.id}>
-                            <div className="box-projects">
-
-                                <h2 className="title-project">{item.name.toUpperCase()}</h2>
-
-                                <div className="info-project">
-                                    <div className="topic"></div><span className="language" style={{ marginLeft: "0.5rem" }}>{item.language}</span>
-                                </div>
-
-                                <div className="info-project" style={{ marginTop: "2rem" }}>
-                                    <a href={item.html_url} className="view-project" target="_blank">
-                                        <img src="" width="20" style={{ marginLeft: "0.5rem" }} />ACESSAR
-                                    </a>
-                                </div>
-
-                            </div>
-                        </div>
-                    ))}
-                </div>
-
-            </div>
+            ))}
         </div>
     )
 }

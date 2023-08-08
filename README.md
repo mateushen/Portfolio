@@ -15,10 +15,10 @@ O portfólio foi desenvolvido utilizando as seguintes tecnologias:
 
 O portfólio inclui as seguintes funcionalidades:
 
-1. Exibição de projetos desenvolvidos por Mateus Henrique
-2. Seção "Sobre Mim" com informações pessoais e profissionais
-3. Seção "Habilidades" com as habilidades em desenvolvimento web de Mateus Henrique
-4. Seção "Contato" com formulário de contato e links para redes sociais
+1. Exibição simples com as redes sociais.
+2. Seção com informações pessoais e profissionais.
+3. Seção "Tecnologias", com tecnologias utilizadas em desenvolvimento web por mim.
+4. Exibição de projetos desenvolvidos por mim.
 
 ## Como Executar o Projeto
 

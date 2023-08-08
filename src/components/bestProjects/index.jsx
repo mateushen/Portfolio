@@ -13,7 +13,7 @@ export default function bestProjects() {
                     <div className="component-left"><Folder className="folder" size={25} /><div className="vertical-line"></div></div>
                     <div className="project-description">
                         <h3 className="project-title">{item.name}</h3>
-                        <p className="project-language">{item.language}</p>
+                        <div><p className="project-language">{item.language}</p></div>
                         <a className="project-url" href={item.url}>Ver repositório ➜ </a>
                     </div>
                 </div>

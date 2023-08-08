@@ -43,7 +43,7 @@ export default function allProjects() {
                     <div className="project-description">
                         <h3 className="project-title">{item.name}</h3>
                         <p className="project-language">{item.language}</p>
-                        <a className="project-url" href={item.html_url}>Ver repositório ➜ </a>
+                        <a className="project-url" href={item.html_url} target="_blank">Ver repositório ➜ </a>
                     </div>
                 </div>
             ))}

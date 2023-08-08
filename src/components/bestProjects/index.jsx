@@ -14,7 +14,7 @@ export default function bestProjects() {
                     <div className="project-description">
                         <h3 className="project-title">{item.name}</h3>
                         <div><p className="project-language">{item.language}</p></div>
-                        <a className="project-url" href={item.url}>Ver repositório ➜ </a>
+                        <a className="project-url" href={item.url} target="_blank">Ver repositório ➜ </a>
                     </div>
                 </div>
             ))}

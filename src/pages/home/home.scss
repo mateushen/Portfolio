@@ -15,7 +15,8 @@
   align-items: center;
   position: fixed;
   left: 0;
-  margin-top: 5rem;
+  text-align: center;
+  margin: 12% auto;
 }
 
 .name {
@@ -35,9 +36,9 @@
 }
 
 .socials {
+  width: 60%;
   display: flex;
-  width: 50%;
-  align-items: center;
+  justify-content: space-around;
 }
 
 .home-components {
@@ -86,7 +87,6 @@
   }
   .aboutme-container{
     position: static;
-    width: 75%;
   }
   .home-components{
     width: 90%;

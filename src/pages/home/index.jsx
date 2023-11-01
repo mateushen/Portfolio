@@ -31,7 +31,6 @@ function Home() {
               <Technologies />
               <Training />
               <BestProjects />
-              <a className="button-projects" src="https://github.com/mateushen">Ver todos</a>
             </div>
           <Footer />
         </div>

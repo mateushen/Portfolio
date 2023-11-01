@@ -106,3 +106,28 @@ hr {
     background-color: colors.$cinzaescuro;
     border-radius: 0.5rem;
 }
+
+.button-projects {
+    font-style: normal;
+    color: colors.$branco;
+    background-color: rgb(27 85 100);
+    border: 0px inset #ffffff;
+    text-shadow: 0px -1px 1px #222222;
+    box-shadow: 4px 4px 2px #000000;
+    -moz-box-shadow: 4px 4px 2px #000000;
+    -webkit-box-shadow: 4px 4px 2px #000000;
+    border-radius: 0px 30px 0px 30px;
+    -moz-border-radius: 0px 30px 0px 30px;
+    -webkit-border-radius: 0px 30px 0px 30px;
+    width: 10rem;
+    padding: 0.5rem;
+    font-size: 16px;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  
+  .button-projects:hover {
+    cursor: pointer;
+    background-color: rgb(42, 132, 155);
+  }

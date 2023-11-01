@@ -3,6 +3,11 @@ import { Folder } from '@phosphor-icons/react';
 import { Projects } from './projects';
 
 export default function bestProjects() {
+
+    function handleProjects() {
+        window.location.href = 'https://github.com/mateushen/';
+    }
+
     return (
         <div className="component-container">
             <hr />
@@ -17,6 +22,7 @@ export default function bestProjects() {
                     </div>
                 </div>
             ))}
+            <button className="button-projects" onClick={handleProjects}>Ver todos</button>
         </div>
     )
 }

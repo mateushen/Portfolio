@@ -3,7 +3,6 @@ import { Folder } from '@phosphor-icons/react';
 import { Projects } from './projects';
 
 export default function bestProjects() {
-
     return (
         <div className="component-container">
             <hr />

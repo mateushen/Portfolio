@@ -5,21 +5,9 @@ import Social from '../../components/social';
 import Presentation from '../../components/presentation';
 import Technologies from '../../components/technologies';
 import Training from '../../components/training';
-import AllProjects from '../../components/allProjects';
 import BestProjects from '../../components/bestProjects';
-import { useState } from 'react';
 
 function Home() {
-  const [viewProjects, setViewProjects] = useState(false);
-
-  function handleProjects() {
-    setViewProjects(true);
-  }
-
-  function handleHome() {
-    setViewProjects(false);
-  }
-
   return (
     <>
       <Header />
@@ -38,20 +26,13 @@ function Home() {
         </div>
 
         <div className="home-components">
-          {viewProjects ?
-            <div className="components-list">
-              <AllProjects />
-              <button className="button-projects" onClick={handleHome}>Voltar</button>
-            </div>
-            :
             <div className="components-list">
               <Presentation />
               <Technologies />
               <Training />
               <BestProjects />
-              <button className="button-projects" onClick={handleProjects}>Ver todos</button>
+              <a className="button-projects" src="https://github.com/mateushen">Ver todos</a>
             </div>
-          }
           <Footer />
         </div>
       </div>

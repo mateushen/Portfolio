@@ -20,6 +20,16 @@ hr {
     color: colors.$cinzaclaro;
     padding: 1rem;
     text-align: justify;
+    display: flex;
+    flex-direction: column;
+}
+
+.component-description span {
+    margin: 0.5rem;
+}
+
+.description-local {
+    font-weight: 600;
 }
 
 .technologies-container {

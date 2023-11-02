@@ -5,6 +5,7 @@ import Social from '../../components/social';
 import Presentation from '../../components/presentation';
 import Technologies from '../../components/technologies';
 import Training from '../../components/training';
+import Experience from '../../components/experience';
 import BestProjects from '../../components/bestProjects';
 
 function Home() {
@@ -26,12 +27,13 @@ function Home() {
         </div>
 
         <div className="home-components">
-            <div className="components-list">
-              <Presentation />
-              <Technologies />
-              <Training />
-              <BestProjects />
-            </div>
+          <div className="components-list">
+            <Presentation />
+            <Technologies />
+            <Training />
+            <Experience />
+            <BestProjects />
+          </div>
           <Footer />
         </div>
       </div>

@@ -1,5 +1,5 @@
 import './header.scss'
-import Icon from '../../global/img/portfolio.png';
+import Icon from '../../assets/img/portfolio.png';
 
 export default function Header() {
     return (

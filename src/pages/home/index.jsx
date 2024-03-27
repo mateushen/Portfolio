@@ -6,7 +6,7 @@ import Presentation from '../../components/presentation';
 import Technologies from '../../components/technologies';
 import Training from '../../components/training';
 import Experience from '../../components/experience';
-import BestProjects from '../../components/bestProjects';
+import BestProjects from '../../components/best-projects';
 
 function Home() {
   return (

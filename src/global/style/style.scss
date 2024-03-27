@@ -1,7 +1,9 @@
-@use '../../global/colors';
+@use '../colors';
 
 .component-container {
     margin: 3rem 0 0 3rem;
+    display: flex;
+    flex-direction: column;
 }
 
 hr {
@@ -22,6 +24,11 @@ hr {
     text-align: justify;
     display: flex;
     flex-direction: column;
+}
+
+.component-container .presentation-description {
+    font-family: 'Nunito';
+    color: #fff;
 }
 
 .component-description span {
@@ -73,43 +80,47 @@ hr {
 }
 
 .project-description {
-    width: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
     padding: 1rem;
-    margin: 1rem;
+    gap: 1em;
 }
 
-.project-title{
+.project-description .project-title {
     color: colors.$cinzaclaro;
     font-size: 1.3rem;
     font-weight: 700;
 }
 
-.project-language{
-    --tw-bg-opacity: 1;
-    background-color: rgb(27 85 100/var(--tw-bg-opacity));
-    --tw-text-opacity: 1;
-    color: rgb(59 193 226/var(--tw-text-opacity));
+.project-description .project-language {
+    width: 100px;
+    background-color: colors.$cianosecondary;
+    color: colors.$branco;
     padding: 0.1rem;
     text-transform: uppercase;
     border-radius: 0.4rem;
-    font-weight: 500;
+    font-weight: 600;
     text-align: center;
-    margin-top: 10%;
-    margin-bottom: 20%;
-    font-weight: 500;
 }
 
-.project-url{
+.project-description .project-url {
     text-decoration: none;
     --tw-text-opacity: 1;
-    color: rgb(27 85 100/var(--tw-text-opacity));
+    color: colors.$cinzaclaro;
     font-weight: 500;
 }
 
-.project-url:hover{
+.project-description .project-url:hover {
     --tw-text-opacity: 1;
     color: rgb(59 193 226/var(--tw-text-opacity));
     cursor: pointer;
+}
+
+.project-description .description {
+    color: #fff;
+    font-size: 16px;
+    font-family: 'Nunito';
 }
 
 .project-description:hover {
@@ -117,27 +128,30 @@ hr {
     border-radius: 0.5rem;
 }
 
-.button-projects {
+.component-container .button-projects {
     font-style: normal;
     color: colors.$branco;
     background-color: rgb(27 85 100);
     border: 0px inset #ffffff;
-    text-shadow: 0px -1px 1px #222222;
-    box-shadow: 4px 4px 2px #000000;
-    -moz-box-shadow: 4px 4px 2px #000000;
-    -webkit-box-shadow: 4px 4px 2px #000000;
     border-radius: 0px 30px 0px 30px;
-    -moz-border-radius: 0px 30px 0px 30px;
-    -webkit-border-radius: 0px 30px 0px 30px;
     width: 10rem;
     padding: 0.5rem;
     font-size: 16px;
     display: block;
     margin: 0 auto;
     margin-top: 5%;
-  }
-  
-  .button-projects:hover {
     cursor: pointer;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Nunito';
+    font-weight: bold;
+}
+
+.component-container .button-projects:hover {
     background-color: rgb(42, 132, 155);
-  }
+}
+
+.component-description .description-year{
+    color: colors.$cinzaclaro;
+    font-weight: 500;
+}

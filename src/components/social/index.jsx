@@ -14,7 +14,7 @@ export default function Social({ icon }) {
                 <a href="https://github.com/mateushen/" target="_blank"><GithubLogo size={32} weight="bold" className="social-icon" /></a>
             )}
             {icon === 'linkedin' && (
-                <a href="https://www.linkedin.com/in/mateushen001/" target="_blank"><LinkedinLogo size={32} weight="bold" className="social-icon" /></a>
+                <a href="https://www.linkedin.com/in/mateus-henrique20/" target="_blank"><LinkedinLogo size={32} weight="bold" className="social-icon" /></a>
             )}
         </div>
     )

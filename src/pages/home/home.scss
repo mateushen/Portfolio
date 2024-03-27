@@ -38,7 +38,8 @@
 .socials {
   width: 60%;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  gap: 1em;
 }
 
 .home-components {
@@ -68,5 +69,8 @@
   .home-components {
     width: 90%;
     margin-top: 0.5rem;
+  }
+  .socials {
+    width: 80%;
   }
 }
